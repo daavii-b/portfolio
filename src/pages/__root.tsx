@@ -2,7 +2,6 @@ import {
   createRootRouteWithContext,
   HeadContent,
   Outlet,
-  useMatches,
 } from "@tanstack/react-router";
 
 export const Route = createRootRouteWithContext()({
@@ -10,12 +9,9 @@ export const Route = createRootRouteWithContext()({
 });
 
 function RootComponent() {
-  const matches = useMatches();
-
   return (
     <>
       <HeadContent />
-
       <Outlet />
     </>
   );
