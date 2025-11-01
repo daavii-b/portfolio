@@ -4,13 +4,7 @@ import { TypingText } from "./ui/shadcn-io";
 
 export const Greetings = ({ ...props }: ComponentProps<"h1">) => {
   return (
-    <h1
-      {...props}
-      className={cn(
-        "md:bg-foreground/1 w-fit rounded-sm p-2 text-xl md:border md:border-white/2 md:text-2xl md:backdrop-blur-xl",
-        props.className,
-      )}
-    >
+    <h1 {...props} className={cn("w-full", props.className)}>
       <TypingText
         text={[
           "Hello, I'm Davi.",
@@ -20,7 +14,7 @@ export const Greetings = ({ ...props }: ComponentProps<"h1">) => {
         typingSpeed={75}
         pauseDuration={3000}
         showCursor={true}
-        className="text-foreground- h-full w-full max-w-2xl text-center font-bold"
+        className="text-foreground md:bg-foreground/1 h-full w-fit max-w-2xl rounded-sm p-2 text-center text-xl font-bold md:border md:border-white/2 md:text-2xl md:backdrop-blur-xl"
         cursorClassName="h-8 !text-muted-foreground"
         variableSpeed={{ min: 50, max: 120 }}
         as={"span"}
