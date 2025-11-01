@@ -16,3 +16,11 @@ export const SectionContainer = ({ ...props }: ComponentProps<"section">) => {
     </section>
   );
 };
+
+export const MainContainer = ({ ...props }: ComponentProps<"main">) => {
+  return (
+    <main {...props} className={cn("p-4", props.className)}>
+      {props.children}
+    </main>
+  );
+};
