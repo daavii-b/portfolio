@@ -61,7 +61,7 @@ export const SocialCard = ({ ...props }: ComponentProps<typeof Card>) => {
           <LinkedInLink />
           <GithubLink />
         </Container>
-        <Container className="w-fit">
+        <Container className="flex w-fit flex-col gap-1">
           <WhatsAppLink />
           <Container className="w-32">
             <img src={QrCode} className="max-w-full" />
@@ -79,9 +79,9 @@ const WhatsAppLink = () => {
       href="https://wa.link/10uvyb"
     >
       <span>
-        <LucideMessageCircleMore className="size-3 text-emerald-800 dark:text-emerald-300" />
+        <LucideMessageCircleMore className="size-4 text-emerald-800 dark:text-emerald-300" />
       </span>
-      <span className="text-xs">Fale comigo</span>
+      <span className="text-xs">Message me</span>
       <span>
         <CornerRightDown className="size-2" />
       </span>
