@@ -1,4 +1,5 @@
 export * from "./container";
+export * from "./footer";
 export * from "./greetings";
 export * from "./header";
 export * from "./logo-container";
