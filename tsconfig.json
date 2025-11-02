@@ -10,10 +10,21 @@
       "@/*": [
         "./src/*"
       ],
-      "@/components/*":["./src/components/*"],
-      "@/lib/*":["./src/lib/*"],
-      "@/pages/*":["./src/pages/*"],
-      "@/styles/*":["./src/styles/*"]
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "@/lib/*": [
+        "./src/lib/*"
+      ],
+      "@/pages/*": [
+        "./src/pages/*"
+      ],
+      "@/styles/*": [
+        "./src/styles/*"
+      ],
+      "@/assets/*": [
+        "./src/assets/*"
+      ]
     }
   },
   "include": [
