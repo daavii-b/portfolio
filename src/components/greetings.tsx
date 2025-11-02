@@ -14,7 +14,7 @@ export const Greetings = ({ ...props }: ComponentProps<"h1">) => {
         typingSpeed={75}
         pauseDuration={3000}
         showCursor={true}
-        className="text-foreground md:bg-foreground/1 h-full w-fit max-w-2xl rounded-sm p-2 text-center text-xl font-bold md:border md:border-white/2 md:text-2xl md:backdrop-blur-xl"
+        className="text-muted-foreground md:bg-foreground/1 h-full w-fit max-w-2xl rounded-sm p-2 text-center text-base font-bold md:border md:border-white/2 md:text-2xl md:backdrop-blur-xl"
         cursorClassName="h-8 !text-muted-foreground"
         variableSpeed={{ min: 50, max: 120 }}
         as={"span"}
