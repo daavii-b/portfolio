@@ -1,5 +1,13 @@
 export type StackInfo = { name: string; logoLink: string };
 
+export const ENV_VARIABLES = {
+  LKDIN_LINK: import.meta.env.VITE_LKDIN_LINK,
+  GITHUB_LINK: import.meta.env.VITE_GH_LINK,
+  WA_LINK: import.meta.env.VITE_WA_LINK,
+  EMAIL: import.meta.env.VITE_EMAIL,
+  QR_LINK: import.meta.env.VITE_QR_LINK,
+};
+
 export const STACK_LOGOS: StackInfo[] = [
   {
     name: "JavaScript",
