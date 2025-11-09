@@ -1,6 +1,6 @@
 export type StackInfo = { name: string; logoLink: string };
 
-export const ENV_VARIABLES = {
+export const ENV = {
   LKDIN_LINK: import.meta.env.VITE_LKDIN_LINK,
   GITHUB_LINK: import.meta.env.VITE_GH_LINK,
   WA_LINK: import.meta.env.VITE_WA_LINK,
