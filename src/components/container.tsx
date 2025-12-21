@@ -9,7 +9,7 @@ export const Container = ({ ...props }: ComponentProps<"div">) => {
   );
 };
 
-export const SectionContainer = ({ ...props }: ComponentProps<"section">) => {
+export const Section = ({ ...props }: ComponentProps<"section">) => {
   return (
     <section {...props} className={cn(props.className)}>
       {props.children}
@@ -17,7 +17,7 @@ export const SectionContainer = ({ ...props }: ComponentProps<"section">) => {
   );
 };
 
-export const MainContainer = ({ ...props }: ComponentProps<"main">) => {
+export const Main = ({ ...props }: ComponentProps<"main">) => {
   return (
     <main {...props} className={cn("p-4", props.className)}>
       {props.children}

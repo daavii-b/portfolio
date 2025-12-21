@@ -1,4 +1,4 @@
-import { cn, ENV_VARIABLES } from "@/lib";
+import { cn, ENV } from "@/lib";
 import {
   CornerRightDown,
   LucideActivity,
@@ -68,7 +68,7 @@ export const SocialCard = ({ ...props }: ComponentProps<typeof Card>) => {
           <WhatsAppLink />
           <Container className="w-32">
             <img
-              src={ENV_VARIABLES.QR_LINK}
+              src={ENV.QR_LINK}
               aria-label="QRCode from WhatsApp"
               className="max-w-full"
             />
@@ -83,7 +83,7 @@ const WhatsAppLink = () => {
   return (
     <SocialLink
       className="p-0 hover:text-emerald-600 dark:hover:text-emerald-100"
-      href={ENV_VARIABLES.WA_LINK}
+      href={ENV.WA_LINK}
     >
       <span>
         <LucideMessageCircleMore className="size-4 text-emerald-800 dark:text-emerald-300" />
@@ -98,7 +98,7 @@ const WhatsAppLink = () => {
 
 const LinkedInLink = () => {
   return (
-    <SocialLink href={ENV_VARIABLES.LKDIN_LINK} aria-label="link for linkedin">
+    <SocialLink href={ENV.LKDIN_LINK} aria-label="link for linkedin">
       <span>
         <LucideLinkedin className="size-4 text-blue-400" />
       </span>
@@ -109,7 +109,7 @@ const LinkedInLink = () => {
 
 const GithubLink = () => {
   return (
-    <SocialLink href={ENV_VARIABLES.GITHUB_LINK} aria-label="link for github">
+    <SocialLink href={ENV.GITHUB_LINK} aria-label="link for github">
       <span>
         <LucideGithub className="size-4 text-slate-400" />
       </span>
