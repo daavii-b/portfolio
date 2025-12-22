@@ -5,3 +5,7 @@ export * from "./input";
 export * from "./input-group";
 export * from "./navigation-menu";
 export * from "./tabs";
+export * from "./switch";
+export * from "./item";
+export * from "./separator";
+export * from "./switch";
