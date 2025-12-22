@@ -1,5 +1,5 @@
 import { cn } from "@/lib";
-import { ComponentProps } from "react";
+import type { ComponentProps } from "react";
 
 export const Header = ({ ...props }: ComponentProps<"header">) => {
   return (
