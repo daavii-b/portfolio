@@ -1,16 +1,14 @@
 import {
-  AboutCard,
   Container,
   Footer,
-  Greetings,
   Header,
-  MainContainer,
+  Main,
   NavigationBar,
-  SectionContainer,
-  SocialCard,
+  Section,
 } from "@/components";
-import { TechStackMarquee } from "@/components/tech-stack-marquee";
 import { createFileRoute } from "@tanstack/react-router";
+import { Greetings, TechStackMarquee } from "./-components";
+import { AboutCard } from "./-components/about-card";
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,
@@ -23,15 +21,17 @@ function RouteComponent() {
         <Greetings />
         <NavigationBar />
       </Header>
-      <MainContainer className="w-full space-y-6">
-        <SectionContainer className="grid w-full gap-4 md:grid-cols-2">
+
+      <Main className="space-y-8">
+        <Section>
           <AboutCard />
-          <SocialCard />
-        </SectionContainer>
-        <SectionContainer>
+        </Section>
+
+        <Section>
           <TechStackMarquee />
-        </SectionContainer>
-      </MainContainer>
+        </Section>
+      </Main>
+
       <Footer />
     </Container>
   );

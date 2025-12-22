@@ -1,6 +1,6 @@
 import { cn } from "@/lib";
-import { ComponentProps } from "react";
-import { TypingText } from "./ui/shadcn-io";
+import type { ComponentProps } from "react";
+import { TypingText } from "../../components/ui/shadcn-io";
 
 export const Greetings = ({ ...props }: ComponentProps<"h1">) => {
   return (
@@ -14,7 +14,7 @@ export const Greetings = ({ ...props }: ComponentProps<"h1">) => {
         typingSpeed={75}
         pauseDuration={3000}
         showCursor={true}
-        className="text-muted-foreground md:bg-foreground/1 h-full w-fit max-w-2xl rounded-sm p-2 text-center text-base font-bold md:border md:border-white/2 md:text-2xl md:backdrop-blur-xl"
+        className="text-muted-foreground md:bg-foreground/1 dark:inset-shadow-accent dark:shadow-accent/20 h-full w-fit max-w-2xl rounded-lg p-2 px-4 text-center text-xl font-bold shadow-sm inset-shadow-2xs md:border md:border-white/2 md:text-2xl md:backdrop-blur-xl"
         cursorClassName="h-8 !text-muted-foreground"
         variableSpeed={{ min: 50, max: 120 }}
         as={"span"}

@@ -1,12 +1,12 @@
 import { STACK_LOGOS } from "@/lib";
-import { Container } from "./container";
-import { LogoIcon } from "./logo-container";
 import {
   Marquee,
   MarqueeContent,
   MarqueeFade,
   MarqueeItem,
-} from "./ui/shadcn-io";
+} from "@/components/ui/shadcn-io";
+import { Container, LogoIcon } from "@/components";
+import { v4 } from "uuid";
 
 export const TechStackMarquee = () => {
   return (
@@ -18,10 +18,10 @@ export const TechStackMarquee = () => {
       <Marquee>
         <MarqueeFade side="left" />
         <MarqueeContent speed={30} autoFill={false} className="p-4">
-          {STACK_LOGOS.map(({ name, logoLink }, i) => (
+          {STACK_LOGOS.map(({ name, logoLink }) => (
             <MarqueeItem
               className="h-10 w-10 md:h-16 md:w-16"
-              key={`marquee_item_${i}`}
+              key={`marquee_item_${v4()}`}
               title={name}
             >
               <LogoIcon

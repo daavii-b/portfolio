@@ -1,3 +1,4 @@
+import React from "react";
 import {
   createRootRouteWithContext,
   HeadContent,
@@ -10,9 +11,9 @@ export const Route = createRootRouteWithContext()({
 
 function RootComponent() {
   return (
-    <>
+    <React.Fragment>
       <HeadContent />
       <Outlet />
-    </>
+    </React.Fragment>
   );
 }
