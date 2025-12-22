@@ -1,6 +1,11 @@
-import { LucideMoon, LucideSun, LucideSunMoon } from "lucide-react";
-import { Activity, type ComponentProps } from "react";
-import { useTheme } from "../contexts";
+import {
+  type LucideIcon,
+  LucideMoon,
+  LucideSun,
+  LucideSunMoon,
+} from "lucide-react";
+import type { ComponentProps } from "react";
+import { ThemeEnum, useTheme } from "../contexts";
 import {
   Button,
   DropdownMenu,
@@ -9,25 +14,24 @@ import {
   DropdownMenuTrigger,
 } from "./ui";
 
-export const ThemeToggle = () => {
+const ThemeIcons: Record<ThemeEnum, LucideIcon> = {
+  light: LucideSun,
+  dark: LucideMoon,
+  system: LucideSunMoon,
+};
+
+export const ThemeToggle = (
+  props: React.ComponentProps<typeof DropdownMenuTrigger>,
+) => {
   const { theme, setTheme } = useTheme();
+
+  const Icon = ThemeIcons[theme];
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
+      <DropdownMenuTrigger {...props} asChild>
         <Button variant="outline" size="icon-lg">
-          <Activity mode={theme === "light" ? `visible` : "hidden"}>
-            <LucideSun className="size-4 transition-all md:size-5" />
-          </Activity>
-
-          <Activity mode={theme === "dark" ? `visible` : "hidden"}>
-            <LucideMoon className="size-4 transition-all md:size-5" />
-          </Activity>
-
-          <Activity mode={theme === "system" ? `visible` : "hidden"}>
-            <LucideSunMoon className="size-4 transition-all md:size-5" />
-          </Activity>
-
+          <Icon className="size-4 transition-all md:size-5" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
@@ -35,15 +39,15 @@ export const ThemeToggle = () => {
         align="end"
         className="border-border/40 bg-accent/30 flex flex-col justify-center gap-2 border p-1 py-2 font-bold backdrop-blur-xs"
       >
-        <MenuItem onClick={() => setTheme("light")}>
+        <MenuItem onClick={() => setTheme(ThemeEnum.Light)}>
           <LucideSun className="size-3 md:size-4" />
           <span>Light</span>
         </MenuItem>
-        <MenuItem onClick={() => setTheme("dark")}>
+        <MenuItem onClick={() => setTheme(ThemeEnum.Dark)}>
           <LucideMoon className="size-3 md:size-4" />
           <span>Dark</span>
         </MenuItem>
-        <MenuItem onClick={() => setTheme("system")}>
+        <MenuItem onClick={() => setTheme(ThemeEnum.System)}>
           <LucideSunMoon className="size-3 md:size-4" />
           <span>System</span>
         </MenuItem>
