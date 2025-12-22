@@ -26,7 +26,7 @@ const SOCIAL_LINKS = [
 
 export const AboutCard = () => {
   return (
-    <Card className="bg-accent/10 inset-shadow-ring/60 m-auto w-full max-w-2xl space-y-1 p-4 py-6 shadow-lg inset-shadow-2xs backdrop-blur-xl md:p-6 md:py-8 md:text-lg">
+    <Card className="bg-accent/10 dark:inset-shadow-ring/60 dark:shadow-accent m-auto w-full max-w-2xl space-y-1 p-4 py-6 shadow-lg inset-shadow-2xs backdrop-blur-xl md:p-6 md:py-8 md:text-lg dark:shadow-md/60">
       <CardTitle className="m-0 flex flex-col items-center justify-between gap-4 p-0 md:flex-row">
         <Container>
           <h2 className="flex items-center gap-2 text-xs">
@@ -43,7 +43,7 @@ export const AboutCard = () => {
               key={social.id}
               variant="outline"
               asChild
-              className="p-0"
+              className="dark:shadow-accent/35 dark:inset-shadow-ring/70 inset-shadow-ring/30 p-0 shadow-md inset-shadow-xs"
               title={social.title}
             >
               <SocialLink href={social.link}>
@@ -85,7 +85,7 @@ const SocialLink = (props: React.ComponentProps<"a">) => {
     <Button
       asChild
       variant="link"
-      className="flex items-center justify-center p-0 underline transition-colors hover:text-sky-400 dark:hover:text-sky-200"
+      className="flex items-center justify-center p-0 underline transition-colors hover:text-sky-400 dark:hover:text-sky-300"
     >
       <a
         target="_blank"
