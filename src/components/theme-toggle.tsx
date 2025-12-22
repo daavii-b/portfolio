@@ -1,6 +1,6 @@
 import { LucideMoon, LucideSun, LucideSunMoon } from "lucide-react";
-import { Activity, ComponentProps } from "react";
-import { useTheme } from "./theme-provider";
+import { Activity, type ComponentProps } from "react";
+import { useTheme } from "../contexts";
 import {
   Button,
   DropdownMenu,
@@ -16,15 +16,15 @@ export const ThemeToggle = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon-lg">
-          <Activity mode={theme == "light" ? `visible` : "hidden"}>
+          <Activity mode={theme === "light" ? `visible` : "hidden"}>
             <LucideSun className="size-4 transition-all md:size-5" />
           </Activity>
 
-          <Activity mode={theme == "dark" ? `visible` : "hidden"}>
+          <Activity mode={theme === "dark" ? `visible` : "hidden"}>
             <LucideMoon className="size-4 transition-all md:size-5" />
           </Activity>
 
-          <Activity mode={theme == "system" ? `visible` : "hidden"}>
+          <Activity mode={theme === "system" ? `visible` : "hidden"}>
             <LucideSunMoon className="size-4 transition-all md:size-5" />
           </Activity>
 
