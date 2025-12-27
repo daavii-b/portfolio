@@ -1,0 +1,10 @@
+{
+  "HOME": {
+    "TABS": {
+      "ABOUT": {
+        "TITLE": "About me",
+        "CONTENT": "I am a <0>Fullstack Software Engineer</0> with a proven track record of over two years in building scalable applications using <1>TypeScript, Nest.JS, Next.Js and React</1>.<2/><3/>I have extensive experience in <4>backend system architecture</4>, including Clean Architecture, SOLID, and DDD. In addition, I am skilled in developing RESTful APIs in accordance with best practices, including SOLID, Clean Code and Design Patterns.<5/><6/>In addition, I have experience of <7>front-end development</7> using React, Next.js and Tailwind. I have expertise in building robust and intuitive interfaces for multiple devices, with a focus on optimizing the user experience."
+      }
+    }
+  }
+}
