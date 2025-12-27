@@ -21,12 +21,12 @@ export const AboutCard = () => {
     <Card className="bg-accent/10 dark:inset-shadow-ring/60 dark:shadow-accent m-auto w-full max-w-2xl space-y-1 p-4 py-6 shadow-lg inset-shadow-2xs backdrop-blur-xl md:p-6 md:py-8 md:text-lg dark:shadow-md/60">
       <CardTitle className="m-0 flex flex-col items-center justify-between gap-4 p-0 md:flex-row">
         <Container>
-          <h2 className="flex items-center gap-2 text-xs">
+          <h3 className="flex items-center gap-2 text-xs md:text-sm">
             <span>
               <EqualApproximately className="size-4" />
             </span>
             {t("HOME.TABS.ABOUT.TITLE")}
-          </h2>
+          </h3>
         </Container>
 
         <ItemGroup className="flex flex-row gap-2">
