@@ -6,6 +6,7 @@ import { GithubIcon } from "./github-icon";
 import { LinkedinIcon } from "./linkedin-icon";
 import { v4 } from "uuid";
 import { Container } from "@/components";
+import { Trans, useTranslation } from "react-i18next";
 
 const SOCIAL_LINKS = [
   { id: v4(), Icon: GithubIcon, link: ENV.GITHUB_LINK, title: "Github" },
@@ -14,6 +15,8 @@ const SOCIAL_LINKS = [
 ];
 
 export const AboutCard = () => {
+  const { t } = useTranslation();
+
   return (
     <Card className="bg-accent/10 dark:inset-shadow-ring/60 dark:shadow-accent m-auto w-full max-w-2xl space-y-1 p-4 py-6 shadow-lg inset-shadow-2xs backdrop-blur-xl md:p-6 md:py-8 md:text-lg dark:shadow-md/60">
       <CardTitle className="m-0 flex flex-col items-center justify-between gap-4 p-0 md:flex-row">
@@ -22,7 +25,7 @@ export const AboutCard = () => {
             <span>
               <EqualApproximately className="size-4" />
             </span>
-            About me
+            {t("HOME.TABS.ABOUT.TITLE")}
           </h2>
         </Container>
 
@@ -44,26 +47,19 @@ export const AboutCard = () => {
       </CardTitle>
 
       <CardContent className="p-0 font-medium">
-        <p>
-          I am a <strong>Fullstack Software Engineer</strong> with a proven
-          track record of over two years in building scalable applications using{" "}
-          <strong>TypeScript, Nest.JS, Next.Js and React</strong>.
-        </p>
-        <br />
-        <p>
-          I have extensive experience in{" "}
-          <strong>backend system architecture</strong>, including Clean
-          Architecture, SOLID, and DDD. In addition, I am skilled in developing
-          RESTful APIs in accordance with best practices, including SOLID, Clean
-          Code and Design Patterns.
-        </p>
-        <br />
-        <p>
-          In addition, I have experience of{" "}
-          <strong>front-end development</strong> using React, Next.js and
-          Tailwind. I have expertise in building robust and intuitive interfaces
-          for multiple devices, with a focus on optimizing the user experience.
-        </p>
+        <Trans
+          i18nKey={"HOME.TABS.ABOUT.CONTENT"}
+          components={[
+            <strong key="0" />,
+            <strong key="1" />,
+            <br key="2" />,
+            <br key="3" />,
+            <strong key="4" />,
+            <br key="5" />,
+            <br key="6" />,
+            <strong key="7" />,
+          ]}
+        />
       </CardContent>
     </Card>
   );
@@ -87,29 +83,3 @@ const SocialLink = (props: React.ComponentProps<"a">) => {
     </Button>
   );
 };
-
-/*
-
-<Container className="flex w-full items-center justify-between md:flex-row">
-             <SocialLink href={`mailto:${ENV.EMAIL}`}>
-               <span>
-                 <Mail className="size-4" />
-               </span>
-               Send me an email
-             </SocialLink>
-
-             <SocialLink href={ENV.GITHUB_LINK}>
-               <span>
-                 <GithubIcon className="size-4 rounded-xs dark:fill-white" />
-               </span>
-               daavii-b
-             </SocialLink>
-
-             <SocialLink href={ENV.LKDIN_LINK}>
-               <span>
-                 <LinkedinIcon className="border-border/80 inset-shadow-ring/50 size-6 rounded-sm border fill-blue-500 inset-shadow-2xs" />
-               </span>
-               daaviib
-             </SocialLink>
-           </Container>
-*/
