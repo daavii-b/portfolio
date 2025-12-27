@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/work-sans':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/poppins':
+        specifier: ^5.2.7
+        version: 5.2.7
       '@radix-ui/react-dropdown-menu':
         specifier: ^2.1.16
         version: 2.1.16(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -482,6 +488,12 @@ packages:
 
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
+
+  '@fontsource-variable/work-sans@5.2.8':
+    resolution: {integrity: sha512-8uWtTt0/B5NxGie9xUVD5y5Ch4Q+Hy7kFYKtUpwYbzSAgJEoaMxT8rMnfnK7zfAYSLC8GnGO1/tXrFtKIYYQVQ==}
+
+  '@fontsource/poppins@5.2.7':
+    resolution: {integrity: sha512-6uQyPmseo4FgI97WIhA4yWRlNaoLk4vSDK/PyRwdqqZb5zAEuc+Kunt8JTMcsHYUEGYBtN15SNkMajMdqUSUmg==}
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -2151,6 +2163,10 @@ snapshots:
       react-dom: 19.2.0(react@19.2.0)
 
   '@floating-ui/utils@0.2.10': {}
+
+  '@fontsource-variable/work-sans@5.2.8': {}
+
+  '@fontsource/poppins@5.2.7': {}
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:

@@ -1,5 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "@fontsource-variable/work-sans";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/poppins/800.css";
+@import "@fontsource/poppins/900.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -115,13 +120,17 @@
     @apply border-border outline-ring/50;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Poppins", sans-serif;
   }
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Inter", sans-serif;
+    font-family: "Work Sans Variable", sans-serif;
   }
-
 }
