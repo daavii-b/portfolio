@@ -29,7 +29,7 @@ export function LangToggle() {
         <Button
           variant="ghost"
           size="icon"
-          className="dark:inset-shadow-accent shadow-accent/40 border border-blue-600/30 shadow-md inset-shadow-2xs focus-visible:ring-0"
+          className="dark:inset-shadow-accent shadow-accent/40 border-border/20 border shadow-md inset-shadow-2xs hover:text-blue-600 focus-visible:ring-0"
         >
           <Languages className="size-4" />
           <span className="sr-only">Toggle language</span>

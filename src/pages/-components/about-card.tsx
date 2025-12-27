@@ -18,7 +18,7 @@ export const AboutCard = () => {
   const { t } = useTranslation();
 
   return (
-    <Card className="bg-accent/10 dark:inset-shadow-ring/60 dark:shadow-accent m-auto w-full max-w-2xl space-y-1 p-4 py-6 shadow-lg inset-shadow-2xs backdrop-blur-xl md:p-6 md:py-8 md:text-lg dark:shadow-md/60">
+    <Card className="bg-accent/10 dark:inset-shadow-ring/60 dark:shadow-accent m-auto w-full max-w-4xl space-y-1 p-4 py-6 shadow-lg inset-shadow-2xs backdrop-blur-xl md:p-6 md:py-8 md:text-lg dark:shadow-md/60">
       <CardTitle className="m-0 flex flex-col items-center justify-between gap-4 p-0 md:flex-row">
         <Container>
           <h3 className="flex items-center gap-2 text-xs md:text-sm">
@@ -46,7 +46,7 @@ export const AboutCard = () => {
         </ItemGroup>
       </CardTitle>
 
-      <CardContent className="p-0 font-medium">
+      <CardContent className="text-accent-foreground/80 p-0 font-medium">
         <Trans
           i18nKey={"HOME.TABS.ABOUT.CONTENT"}
           components={[
