@@ -1,15 +1,4 @@
-import {
-  Button,
-  Card,
-  CardFooter,
-  Item,
-  ItemActions,
-  ItemContent,
-  ItemDescription,
-  ItemGroup,
-  ItemHeader,
-  ItemTitle,
-} from "@/components/ui";
+import { Button, Card, Item, ItemGroup } from "@/components/ui";
 import { CardContent, CardTitle } from "./cards";
 import { EqualApproximately, Mail } from "lucide-react";
 import { cn, ENV } from "@/lib";
@@ -57,7 +46,7 @@ export const AboutCard = () => {
       <CardContent className="p-0 font-medium">
         <p>
           I am a <strong>Fullstack Software Engineer</strong> with a proven
-          track record of over two years in building scalable applications using
+          track record of over two years in building scalable applications using{" "}
           <strong>TypeScript, Nest.JS, Next.Js and React</strong>.
         </p>
         <br />
