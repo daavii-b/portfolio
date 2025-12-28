@@ -5,9 +5,10 @@ import {
   Main,
   NavigationBar,
   Section,
+  SectionIds,
 } from "@/components";
 import { createFileRoute } from "@tanstack/react-router";
-import { Greetings, LangToggle, TechStackMarquee } from "./-components";
+import { LangToggle, TechStackMarquee } from "./-components";
 import { AboutCard } from "./-components/about-card";
 
 export const Route = createFileRoute("/")({
@@ -16,15 +17,16 @@ export const Route = createFileRoute("/")({
 
 function RouteComponent() {
   return (
-    <Container className="m-auto flex max-w-5xl flex-col gap-2 gap-y-6">
-      <Header className="flex flex-row items-center p-4 md:px-6">
-        <Greetings />
-        <LangToggle />
+    <Container className="w-ful relative m-auto flex h-16 min-h-screen w-full max-w-5xl flex-col gap-2 gap-y-6 px-4 py-8">
+      <Header className="fixed right-0 left-0 z-50 mx-auto h-16 w-full max-w-5xl justify-between backdrop-blur-md">
         <NavigationBar />
+        <LangToggle />
       </Header>
 
-      <Main className="space-y-8">
-        <Section>
+      <div className="h-16 w-full shrink-0 opacity-0" aria-hidden="true" />
+
+      <Main className="mt-8 space-y-8">
+        <Section id={SectionIds.About}>
           <AboutCard />
         </Section>
 
