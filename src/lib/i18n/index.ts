@@ -18,7 +18,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: true,
+    debug: false,
     defaultNS: "translation",
     lowerCaseLng: true,
     resources: RESOURCES,
