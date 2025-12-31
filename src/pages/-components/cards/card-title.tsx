@@ -7,7 +7,7 @@ export const CardTitle = (props: ComponentProps<typeof SCardTitle>) => {
     <SCardTitle
       {...props}
       className={cn(
-        "text-muted-foreground flex items-center gap-1 p-1 text-sm",
+        "text-primary flex items-center gap-1 p-1 text-sm",
         props.className,
       )}
     >
