@@ -8,7 +8,7 @@ import {
   SectionIds,
 } from "@/components";
 import { createFileRoute } from "@tanstack/react-router";
-import { LangToggle, TechStackMarquee } from "./-components";
+import { HomeCard, LangToggle, TechStackMarquee } from "./-components";
 import { AboutCard } from "./-components/about-card";
 
 export const Route = createFileRoute("/")({
@@ -26,6 +26,10 @@ function RouteComponent() {
       <div className="h-16 w-full shrink-0 opacity-0" aria-hidden="true" />
 
       <Main className="mt-8 space-y-8">
+        <Section id={SectionIds.Home}>
+          <HomeCard />
+        </Section>
+
         <Section id={SectionIds.About}>
           <AboutCard />
         </Section>
