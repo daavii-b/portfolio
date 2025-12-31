@@ -5,6 +5,8 @@ import { CardContent, CardTitle } from "./cards";
 import { ENV } from "@/lib";
 import { LinkedinIcon } from "./linkedin-icon";
 import { GithubIcon } from "./github-icon";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const NETWORK_LINKS = [
   {
@@ -24,6 +26,8 @@ const NETWORK_LINKS = [
   },
 ];
 export const HomeCard = () => {
+  const { t } = useTranslation();
+
   return (
     <Card className="h-fit border-none bg-transparent p-0">
       <CardHeader className="flex w-full flex-col items-center justify-center gap-6">
@@ -33,7 +37,7 @@ export const HomeCard = () => {
 
         <CardDescription className="text-primary shadow-accent/20 flex flex-row items-center gap-2 rounded-3xl border p-2 px-4 text-xs font-semibold shadow-md brightness-105">
           <Tag className="size-4" />
-          <p>Fullstack Developer</p>
+          <p>{t("HOME.WORK_TAG")}</p>
         </CardDescription>
 
         <CardContent className="flex flex-col items-center gap-6">
