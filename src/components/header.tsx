@@ -6,7 +6,7 @@ export const Header = ({ ...props }: ComponentProps<"header">) => {
     <header
       {...props}
       className={cn(
-        "bg-background/60 border-b-accent/20 shadow-accent/10 dark:inset-shadow-accent/20 flex h-16 flex-row border-b p-2 py-4 shadow-md inset-shadow-xs backdrop-blur-md md:p-4 lg:px-12",
+        "bg-background/60 border-b-border/60 dark:border-b-accent/20 dark:shadow-accent/10 dark:inset-shadow-accent/20 flex h-16 flex-row border-b p-2 py-4 shadow-md inset-shadow-xs backdrop-blur-md md:p-4 lg:px-12",
         props.className,
       )}
     >

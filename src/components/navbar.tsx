@@ -18,7 +18,7 @@ import { useTranslation } from "react-i18next";
 import type { TFunction } from "i18next";
 import { SectionIds } from "@/enums";
 
-export type Section = {
+type Section = {
   id: SectionIds;
   title: string;
   icon: LucideIcon;

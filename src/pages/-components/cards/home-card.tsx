@@ -1,10 +1,10 @@
 import { Container } from "@/components";
-import { Card, CardDescription, CardHeader } from "@/components/ui";
+import { CardDescription, CardHeader } from "@/components/ui";
 import { Mail, Tag } from "lucide-react";
-import { CardContent, CardTitle } from "./cards";
+import { CardContent, CardTitle, RootCard } from ".";
 import { ENV } from "@/lib";
-import { LinkedinIcon } from "./linkedin-icon";
-import { GithubIcon } from "./github-icon";
+import { LinkedinIcon } from "./../linkedin-icon";
+import { GithubIcon } from "./../github-icon";
 import { useTranslation } from "react-i18next";
 
 const NETWORK_LINKS = [
@@ -29,13 +29,13 @@ export const HomeCard = () => {
   const { t } = useTranslation();
 
   return (
-    <Card className="h-fit border-none bg-transparent">
-      <CardHeader className="flex w-full flex-col items-center justify-center gap-6">
+    <RootCard className="space-y-6">
+      <CardHeader className="flex w-full flex-col items-center justify-center gap-4">
         <CardTitle className="text-primary w-full justify-center text-5xl lg:text-6xl">
           <h1>Davi Brito</h1>
         </CardTitle>
 
-        <CardDescription className="text-primary shadow-accent/20 flex flex-row items-center gap-2 rounded-3xl border p-2 px-6 text-xs font-semibold shadow-md brightness-105">
+        <CardDescription className="text-primary dark:shadow-accent/20 flex flex-row items-center gap-2 rounded-3xl border p-2 px-6 text-xs font-semibold shadow-md dark:brightness-105">
           <Tag className="size-4" />
           <p>{t("HOME.WORK_TAG")}</p>
         </CardDescription>
@@ -45,7 +45,7 @@ export const HomeCard = () => {
           <NetworkList />
         </Container>
       </CardContent>
-    </Card>
+    </RootCard>
   );
 };
 
@@ -58,7 +58,7 @@ const NetworkList = () => {
             href={social.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="shadow-accent/20 border-accent/40 flex flex-row items-center gap-2 rounded-3xl border fill-white px-8 py-3 text-xs text-white shadow-md transition-colors hover:fill-blue-500 hover:text-blue-500 md:py-2"
+            className="dark:shadow-accent/20 border-border dark:border-accent/40 darK:text-white flex flex-row items-center gap-2 rounded-3xl border px-8 py-3 text-xs shadow-md transition-colors hover:fill-blue-500 hover:text-blue-500 md:py-2 dark:fill-white"
           >
             <social.icon className="size-4" />
             <span className="hidden md:inline">{social.label}</span>

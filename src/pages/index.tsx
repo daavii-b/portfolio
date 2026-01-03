@@ -8,7 +8,8 @@ import {
 } from "@/components";
 import { SectionIds } from "@/enums";
 import { createFileRoute } from "@tanstack/react-router";
-import { AboutCard, HomeCard, LangToggle } from "./-components";
+import { AboutCard, HomeCard } from "./-components/cards";
+import { LangToggle, ThemeToggle } from "./-components/toggles";
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,
@@ -19,17 +20,20 @@ function RouteComponent() {
     <Container className="relative m-auto max-w-5xl py-4">
       <Header className="fixed right-0 left-0 z-50 m-auto max-w-5xl">
         <NavigationBar />
-        <LangToggle />
+        <Container className="flex items-center justify-between gap-2">
+          <LangToggle />
+          <ThemeToggle />
+        </Container>
       </Header>
 
       <div className="h-16 w-full shrink-0 opacity-0" aria-hidden="true" />
 
-      <Main className="max-w-full space-y-4">
+      <Main className="max-w-full space-y-8">
         <Section id={SectionIds.Home}>
           <HomeCard />
         </Section>
 
-        <Section>
+        <Section id={SectionIds.About}>
           <AboutCard />
         </Section>
       </Main>
