@@ -16,13 +16,7 @@ import { v4 } from "uuid";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import type { TFunction } from "i18next";
-
-export enum SectionIds {
-  Home = "home",
-  About = "about",
-  Experience = "experience",
-  Skills = "skills",
-}
+import { SectionIds } from "@/enums";
 
 export type Section = {
   id: SectionIds;
@@ -37,7 +31,7 @@ export const NavigationBar = ({ ...props }) => {
 
   return (
     <NavigationMenu {...props} className={cn("m-auto", props.className)}>
-      <NavigationMenuList className="flex w-full flex-none flex-row gap-4">
+      <NavigationMenuList className="flex w-full flex-none flex-row gap-8 md:gap-4">
         {SECTIONS.map((section) => (
           <NavigationMenuItem
             key={v4()}
