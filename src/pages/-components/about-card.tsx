@@ -1,27 +1,23 @@
-import { Button, Card } from "@/components/ui";
+import { Card } from "@/components/ui";
 import { CardContent, CardTitle } from "./cards";
 import { EqualApproximately } from "lucide-react";
-import { cn } from "@/lib";
-import { Container } from "@/components";
 import { Trans, useTranslation } from "react-i18next";
 
 export const AboutCard = () => {
   const { t } = useTranslation();
 
   return (
-    <Card className="bg-accent/10 dark:inset-shadow-ring/60 dark:shadow-accent m-auto min-h-96 w-full space-y-1 p-4 py-6 shadow-lg inset-shadow-2xs backdrop-blur-xl md:p-6 md:py-8 md:text-lg dark:shadow-md/60">
-      <CardTitle className="m-0 flex flex-col items-center justify-between gap-4 p-0 md:flex-row">
-        <Container>
-          <h3 className="flex items-center gap-2 text-xs md:text-sm">
-            <span>
-              <EqualApproximately className="size-4" />
-            </span>
-            {t("HOME.TABS.ABOUT.TITLE")}
-          </h3>
-        </Container>
+    <Card className="h-fit w-4xl gap-2 border-none bg-transparent">
+      <CardTitle>
+        <h2 className="flex items-center gap-2 text-left text-sm">
+          <span>
+            <EqualApproximately className="size-4" />
+          </span>
+          {t("HOME.TABS.ABOUT.TITLE")}
+        </h2>
       </CardTitle>
 
-      <CardContent className="text-accent-foreground/80 p-0 font-medium">
+      <CardContent className="text-muted-foreground font-medium">
         <Trans
           i18nKey={"HOME.TABS.ABOUT.CONTENT"}
           components={[

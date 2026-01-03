@@ -5,7 +5,6 @@ import { CardContent, CardTitle } from "./cards";
 import { ENV } from "@/lib";
 import { LinkedinIcon } from "./linkedin-icon";
 import { GithubIcon } from "./github-icon";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
 const NETWORK_LINKS = [
@@ -25,11 +24,12 @@ const NETWORK_LINKS = [
     href: ENV.GITHUB_LINK,
   },
 ];
+
 export const HomeCard = () => {
   const { t } = useTranslation();
 
   return (
-    <Card className="h-fit border-none bg-transparent p-0">
+    <Card className="h-fit border-none bg-transparent">
       <CardHeader className="flex w-full flex-col items-center justify-center gap-6">
         <CardTitle className="text-primary w-full justify-center text-6xl">
           <h1>Davi Brito</h1>
@@ -39,13 +39,12 @@ export const HomeCard = () => {
           <Tag className="size-4" />
           <p>{t("HOME.WORK_TAG")}</p>
         </CardDescription>
-
-        <CardContent className="flex flex-col items-center gap-6">
-          <Container>
-            <NetworkList />
-          </Container>
-        </CardContent>
       </CardHeader>
+      <CardContent className="flex flex-col items-center gap-8">
+        <Container>
+          <NetworkList />
+        </Container>
+      </CardContent>
     </Card>
   );
 };
