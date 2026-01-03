@@ -7,7 +7,7 @@ export const AboutCard = () => {
   const { t } = useTranslation();
 
   return (
-    <Card className="h-fit w-4xl gap-2 border-none bg-transparent">
+    <Card className="h-fit max-w-xl gap-2 border-none bg-transparent">
       <CardTitle>
         <h2 className="flex items-center gap-2 text-left text-sm">
           <span>

@@ -12,7 +12,7 @@
     "TABS": {
       "ABOUT": {
         "TITLE": "Sobre mim",
-        "CONTENT": "Eu sou um <0>Engenheiro de Software Fullstack</0> com um histórico comprovado de mais de dois anos na construção de aplicações escaláveis usando <1>TypeScript, Nest.JS, Next.Js e React</1>.<2/><3/>Eu tenho vasta experiência em <4>arquitetura de sistemas backend</4>, incluindo Clean Architecture, SOLID e DDD. Além disso, sou habilidoso no desenvolvimento de APIs RESTful de acordo com as melhores práticas, incluindo SOLID, Clean Code e Padrões de Projeto.<5/><6/>Além disso, tenho experiência em <7>desenvolvimento front-end</7> usando React, Next.js e Tailwind. Tenho expertise na construção de interfaces robustas e intuitivas para múltiplos dispositivos, com foco na otimização da experiência do usuário."
+        "CONTENT": "Eu sou um <0>Engenheiro de Software Fullstack</0> com um histórico comprovado de mais de dois anos na construção de aplicações escaláveis usando <1>TypeScript, Nest.JS, Next.Js e React</1>."
       }
     }
   }

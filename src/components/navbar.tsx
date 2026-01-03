@@ -33,10 +33,7 @@ export const NavigationBar = ({ ...props }) => {
     <NavigationMenu {...props} className={cn("m-auto", props.className)}>
       <NavigationMenuList className="flex w-full flex-none flex-row gap-8 md:gap-4">
         {SECTIONS.map((section) => (
-          <NavigationMenuItem
-            key={v4()}
-            className="flex-none space-x-1 md:basis-24 md:space-x-6"
-          >
+          <NavigationMenuItem key={v4()}>
             <NavigationMenuLink
               className="flex w-full flex-row items-center gap-2 rounded-sm p-2 transition-colors hover:bg-blue-500/5 hover:text-blue-500 focus:bg-blue-500/10 focus:text-blue-600 md:px-4"
               href={`#${section.id}`}
