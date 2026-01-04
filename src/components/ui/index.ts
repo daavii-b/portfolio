@@ -9,3 +9,4 @@ export * from "./switch";
 export * from "./item";
 export * from "./separator";
 export * from "./switch";
+export * from "./badge";

@@ -8,7 +8,7 @@ import {
 } from "@/components";
 import { SectionIds } from "@/enums";
 import { createFileRoute } from "@tanstack/react-router";
-import { AboutCard, HomeCard } from "./-components/cards";
+import { AboutCard, ExperienceCard, HomeCard } from "./-components/cards";
 import { LangToggle, ThemeToggle } from "./-components/toggles";
 
 export const Route = createFileRoute("/")({
@@ -35,6 +35,10 @@ function RouteComponent() {
 
         <Section id={SectionIds.About}>
           <AboutCard />
+        </Section>
+
+        <Section id={SectionIds.Experience}>
+          <ExperienceCard />
         </Section>
       </Main>
 
