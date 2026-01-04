@@ -13,6 +13,18 @@
       "ABOUT": {
         "TITLE": "About me",
         "CONTENT": "<0>Fullstack Software Engineer</0> with almost 3 years of experience building scalable applications using <1>TypeScript, Nest.JS, Next.js, and React</1>. Specialized in backend architecture using <2>Clean Architecture, SOLID, and DDD</2>."
+      },
+      "EXPERIENCE": {
+        "TITLE": "Experience",
+        "CONTENT": [
+          {
+            "title": "Fullstack Developer",
+            "company": "AX4B",
+            "period": "May 2023 - Present",
+            "description": "Led the development of several key features for the company's flagship product, also contributed to architectural decisions and code reviews.",
+            "skills": ["TypeScript", "Nest.JS", "Next.js", "React", "Tailwind"]
+          }
+        ]
       }
     }
   }
