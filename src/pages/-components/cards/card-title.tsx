@@ -1,8 +1,7 @@
-import type { ComponentProps } from "react";
 import { CardTitle as SCardTitle } from "@/components/ui";
 import { cn } from "@/lib";
 
-export const CardTitle = (props: ComponentProps<typeof SCardTitle>) => {
+export const CardTitle = (props: React.ComponentProps<typeof SCardTitle>) => {
   return (
     <SCardTitle
       {...props}
@@ -13,5 +12,17 @@ export const CardTitle = (props: ComponentProps<typeof SCardTitle>) => {
     >
       {props.children}
     </SCardTitle>
+  );
+};
+
+export const SubTitle = (props: React.ComponentProps<"h2">) => {
+  return (
+    <h2
+      {...props}
+      className={cn(
+        "flex items-center gap-2 text-left text-sm font-semibold md:text-base",
+        props.className,
+      )}
+    />
   );
 };
