@@ -8,7 +8,7 @@ export const CardContent = ({
   return (
     <SCardContent
       className={cn(
-        "text-muted-foreground text-xs leading-5 font-medium tracking-wider md:text-sm",
+        "text-muted-foreground text-xs leading-5 font-medium tracking-wider text-balance md:text-sm",
         props.className,
       )}
     >

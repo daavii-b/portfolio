@@ -19,7 +19,7 @@ export const AboutCard = () => {
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <p>
+        <p className="px-4 text-balance">
           <Trans
             i18nKey={"HOME.TABS.ABOUT.CONTENT"}
             components={[
