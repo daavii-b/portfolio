@@ -12,7 +12,7 @@
     "TABS": {
       "ABOUT": {
         "TITLE": "About me",
-        "CONTENT": "I am a <0>Fullstack Software Engineer</0> with a proven track record of over two years in building scalable applications using <1>TypeScript, Nest.JS, Next.Js and React</1>."
+        "CONTENT": "<0>Fullstack Software Engineer</0> with almost 3 years of experience building scalable applications using <1>TypeScript, Nest.JS, Next.js, and React</1>. Specialized in backend architecture using <2>Clean Architecture, SOLID, and DDD</2>."
       }
     }
   }
