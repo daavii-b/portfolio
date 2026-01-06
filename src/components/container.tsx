@@ -11,7 +11,7 @@ export const Container = ({ ...props }: ComponentProps<"div">) => {
 
 export const Section = ({ ...props }: ComponentProps<"section">) => {
   return (
-    <section {...props} className={cn(props.className)}>
+    <section {...props} className={cn(props.className, "h-fit")}>
       {props.children}
     </section>
   );
