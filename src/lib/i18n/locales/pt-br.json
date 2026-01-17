@@ -10,7 +10,8 @@
   "HOME": {
     "TABS": {
       "ABOUT": {
-        "TITLE": "<0>Desenvolvedor Fullstack com 3 anos de experiência</0>, especializado na construção de sistemas sustentáveis e desacoplados usando <1>TypeScript, Nest.JS, Next.js e React</1>. Especializado em desenvolvimento backend seguindo as melhores práticas, como <2>Padrões de Design, Arquitetura Limpa, DDD e SOLID</2>."
+        "CONTENT": "<0>Desenvolvedor Fullstack com 3 anos de experiência</0>, especializado na construção de sistemas sustentáveis e desacoplados usando <1>TypeScript, Nest.JS, Next.js e React</1>. Especializado em desenvolvimento backend seguindo as melhores práticas, como <2>Padrões de Design, Arquitetura Limpa, DDD e SOLID</2>.",
+        "TITLE": "Sobre mim"
       },
       "EXPERIENCE": {
         "CONTENT": [
