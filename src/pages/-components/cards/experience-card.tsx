@@ -54,7 +54,7 @@ const ExperienceList = ({ exps }: { exps: Experiences }) => {
     <ul>
       {exps.map((exp) => (
         <li key={v4()}>
-          <Item variant="default" className="py-0">
+          <Item variant="default" className="gap-8 py-0">
             <ItemHeader>
               <ItemTitle className="flex w-full flex-col items-start">
                 <h3 className="text-foreground flex flex-row gap-2 text-sm">
@@ -71,9 +71,15 @@ const ExperienceList = ({ exps }: { exps: Experiences }) => {
             </ItemHeader>
 
             <ItemContent>
-              <ItemDescription className="line-clamp-4 w-full font-medium text-wrap">
-                {exp.description}
-              </ItemDescription>
+              <ul className="flex list-outside list-disc flex-col gap-2 pl-5">
+                {exp.description.map((desc) => (
+                  <li key={v4()}>
+                    <ItemDescription className="line-clamp-none w-full font-medium text-inherit">
+                      {desc}
+                    </ItemDescription>
+                  </li>
+                ))}
+              </ul>
             </ItemContent>
 
             <ItemFooter className="flex-wrap items-center justify-start">
