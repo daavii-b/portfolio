@@ -1,31 +1,34 @@
 {
   "HEADER": {
     "NAVBAR": {
-      "HOME": "Início",
       "ABOUT": "Sobre",
       "EXPERIENCE": "Experiência",
+      "HOME": "Início",
       "SKILLS": "Habilidades"
     }
   },
   "HOME": {
-    "WORK_TAG": "Desenvolvedor Fullstack",
     "TABS": {
       "ABOUT": {
-        "TITLE": "Sobre mim",
-        "CONTENT": "<0>Engenheiro de software fullstack</0> com quase 3 anos de experiência na criação de aplicações escaláveis usando <1>TypeScript, Nest.JS, Next.js e React</1>. Especializado em arquitetura backend usando <2>Clean Architecture, SOLID e DDD</2>."
+        "TITLE": "<0>Desenvolvedor Fullstack com 3 anos de experiência</0>, especializado na construção de sistemas sustentáveis e desacoplados usando <1>TypeScript, Nest.JS, Next.js e React</1>. Especializado em desenvolvimento backend seguindo as melhores práticas, como <2>Padrões de Design, Arquitetura Limpa, DDD e SOLID</2>."
       },
       "EXPERIENCE": {
-        "TITLE": "Experiência",
         "CONTENT": [
           {
-            "title": "Desenvolvedor Fullstack",
             "company": "AX4B",
+            "description": [
+              "Reduzi a latência das solicitações de API em 80% ao arquitetar um sistema de processamento em segundo plano usando BullMQ e Redis para lidar com operações sem bloqueio.",
+              "Acelerei o ciclo de lançamento em 90% e eliminei erros de implantação manual por meio da implementação de um pipeline automatizado de controle de versão e CI/CD com GitHub Actions e Semantic Release.",
+              "Desacoplei a lógica central do negócio das dependências de terceiros por meio da implementação de Clean Architecture e DDD, o que simplificou os testes de unidade e reduziu a dívida técnica para escalabilidade de longo prazo."
+            ],
             "period": "Maio de 2023 – Presente",
-            "description": "Liderei o desenvolvimento de vários recursos importantes para o principal produto da empresa, além de contribuir para decisões arquitetônicas e revisões de código.",
-            "skills": ["TypeScript", "Nest.JS", "Next.js", "React", "Tailwind"]
+            "skills": ["TypeScript", "Nest.JS", "Next.js", "React", "Tailwind"],
+            "title": "Desenvolvedor Fullstack"
           }
-        ]
+        ],
+        "TITLE": "Experiência"
       }
-    }
+    },
+    "WORK_TAG": "Desenvolvedor Fullstack"
   }
 }

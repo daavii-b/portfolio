@@ -1,31 +1,35 @@
 {
   "HEADER": {
     "NAVBAR": {
-      "HOME": "Home",
       "ABOUT": "About",
       "EXPERIENCE": "Experience",
+      "HOME": "Home",
       "SKILLS": "Skills"
     }
   },
   "HOME": {
-    "WORK_TAG": "Fullstack Developer",
     "TABS": {
       "ABOUT": {
-        "TITLE": "About me",
-        "CONTENT": "<0>Fullstack Software Engineer</0> with almost 3 years of experience building scalable applications using <1>TypeScript, Nest.JS, Next.js, and React</1>. Specialized in backend architecture using <2>Clean Architecture, SOLID, and DDD</2>."
+        "CONTENT": "<0>Fullstack Developer with 3 years</0> of experience,specializing in building maintainable, decoupled systems using <1>TypeScript, Nest.JS, Next.js and React</1>. Specialized in backend development following best practices such as <2>Design Patterns, Clean Architecture, DDD, and SOLID</2>.",
+        "TITLE": "About me"
       },
       "EXPERIENCE": {
-        "TITLE": "Experience",
         "CONTENT": [
           {
-            "title": "Fullstack Developer",
             "company": "AX4B",
+            "description": [
+              "Reduced API request latency by 80% by architecting a background processing system using BullMQ and Redis to handle non-blocking operations.",
+              "Accelerated the release cycle by 90% and eliminated manual deployment errors by implementing an automated versioning and CI/CD pipeline with GitHub Actions and Semantic Release.",
+              "Decoupled core business logic from third-party dependencies by implementing Clean Architecture and DDD, which simplified unit testing and reduced technical debt for long-term scalability."
+            ],
             "period": "May 2023 - Present",
-            "description": "Led the development of several key features for the company's flagship product, also contributed to architectural decisions and code reviews.",
-            "skills": ["TypeScript", "Nest.JS", "Next.js", "React", "Tailwind"]
+            "skills": ["TypeScript", "Nest.JS", "Next.js", "React", "Tailwind"],
+            "title": "Fullstack Developer"
           }
-        ]
+        ],
+        "TITLE": "Experience"
       }
-    }
+    },
+    "WORK_TAG": "Fullstack Developer"
   }
 }
