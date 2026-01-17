@@ -19,7 +19,7 @@ export const Section = ({ ...props }: ComponentProps<"section">) => {
 
 export const Main = ({ ...props }: ComponentProps<"main">) => {
   return (
-    <main {...props} className={cn("p-4", props.className)}>
+    <main {...props} className={cn("md:p-4", props.className)}>
       {props.children}
     </main>
   );

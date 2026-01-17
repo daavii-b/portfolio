@@ -33,7 +33,7 @@ function RouteComponent() {
 
       <div className="h-16 w-full shrink-0 opacity-0" aria-hidden="true" />
 
-      <Main className="max-w-full space-y-8">
+      <Main className="max-w-full space-y-2">
         <Section id={SectionIds.Home}>
           <HomeCard />
         </Section>
