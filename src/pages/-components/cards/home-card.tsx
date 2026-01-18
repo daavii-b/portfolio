@@ -3,9 +3,8 @@ import { CardDescription, CardHeader } from "@/components/ui";
 import { Mail, Tag } from "lucide-react";
 import { CardContent, CardTitle, RootCard } from ".";
 import { ENV } from "@/lib";
-import { LinkedinIcon } from "./../linkedin-icon";
-import { GithubIcon } from "./../github-icon";
 import { useTranslation } from "react-i18next";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 const NETWORK_LINKS = [
   {
@@ -14,12 +13,12 @@ const NETWORK_LINKS = [
     href: `mailto:${ENV.EMAIL}`,
   },
   {
-    icon: LinkedinIcon,
+    icon: SiLinkedin,
     label: "LinkedIn",
-    href: ENV.LKDIN_LINK,
+    href: ENV.LINKEDIN_LINK,
   },
   {
-    icon: GithubIcon,
+    icon: SiGithub,
     label: "GitHub",
     href: ENV.GITHUB_LINK,
   },
@@ -60,7 +59,7 @@ const NetworkList = () => {
             rel="noopener noreferrer"
             className="dark:shadow-accent/20 border-border dark:border-accent/40 darK:text-white flex flex-row items-center gap-2 rounded-3xl border px-8 py-3 text-xs shadow-md transition-colors hover:fill-blue-500 hover:text-blue-500 md:py-2 dark:fill-white"
           >
-            <social.icon className="size-4" />
+            <social.icon className="size-3" />
             <span className="hidden md:inline">{social.label}</span>
           </a>
         </li>

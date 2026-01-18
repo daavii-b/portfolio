@@ -5,11 +5,9 @@ interface ViteTypeOptions {
 }
 
 interface ImportMetaEnv {
-  readonly VITE_WA_LINK: string;
   readonly VITE_EMAIL: string;
-  readonly VITE_LKDIN_LINK: string;
-  readonly VITE_GH_LINK: string;
-  readonly VITE_QR_LINK: string;
+  readonly VITE_LINKEDIN_LINK: string;
+  readonly VITE_GITHUB_LINK: string;
 }
 
 interface ImportMeta {
